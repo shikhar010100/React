@@ -1,0 +1,67 @@
+@import "admin-styles/mixin";
+@import "admin-styles/dashboard";
+@import "admin-styles/products";
+@import "admin-styles/chart";
+@import "admin-styles/dashboardapp";
+@import "admin-styles/mediaquery";
+$color1:white;
+$color2:rgb(46,46,46);
+$color3:rgb(0,104,136);
+.shipping{
+    @include flex;
+    height: 90vh;
+  .backButton{
+    @include square(2.5rem);
+    background-color: $color2;
+    color: $color1;
+    @include flex;
+    position: fixed;
+    top:2rem;
+    left:2rem;
+    border-radius: 100%;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    @include baseShadow;
+    svg{
+        transition:all 0.3s;
+    }
+    &:hover svg{
+        translate:-0.25rem;
+    }
+  }
+    >form{
+        @include flex(column,center,center,2rem);
+        >p{
+            font-size: 2rem;
+            font-weight: 200;
+            width: 10rem;
+            margin-top: 2rem;
+        }
+        width: 25%;
+       >div{
+        width: 100%;
+       
+        @include flex(column,center,center,2rem);
+        >input{
+            width: 100%;
+            height: 3rem;
+            padding: 1rem;
+            border-radius:5px
+        }
+        >button{
+            background-color:$color3;
+            color: white;
+            width: 100%;
+            height: 3rem;
+            border-radius:5px
+        }
+        >select{
+            width: 100%;
+            height: 3rem;
+            padding: 0.8rem;
+            border-radius:5px
+        }
+    }
+}
+}
