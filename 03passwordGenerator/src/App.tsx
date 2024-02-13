@@ -87,6 +87,7 @@ function App() {
               }} />
             <label htmlFor="charInput">Characters</label>
           </div>
+          <h1>hi how are you</h1>
         </div>
       </div>
 
